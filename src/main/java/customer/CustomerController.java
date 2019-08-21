@@ -3,12 +3,9 @@ package customer;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
-import java.util.Calendar;
 
 import javax.annotation.PostConstruct;
 
@@ -71,6 +68,5 @@ public class CustomerController {
     ResponseEntity<?> create(@RequestHeader Map<String, String> headers) {
         return ResponseEntity.ok("{\"user\":\"foo\"}");
     }
-
 
 }
