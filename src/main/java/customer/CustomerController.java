@@ -141,7 +141,6 @@ public class CustomerController {
             } else {
             	return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(resp.getError());
             }
-
         } catch (Exception ex) {
             logger.error("Error creating customer: " + ex);
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error creating customer: " + ex.toString());
